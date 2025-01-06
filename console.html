@@ -243,6 +243,22 @@
     };
 </script>
 
+		    <label for="saveKey">Enter Save Key to Delete:</label>
+    <input type="text" id="saveKey" placeholder="e.g., retroBowlSave">
+    <button id="deleteSave">Delete Save</button>
+
+    <script>
+        document.getElementById("deleteSave").onclick = () => {
+            const saveKey = document.getElementById("saveKey").value;
+            if (localStorage.getItem(saveKey)) {
+                localStorage.removeItem(saveKey); // Delete the specific entry  
+                alert(`Deleted save: ${saveKey}`);
+            } else {
+                alert(`No save found for key: ${saveKey}`);
+            }
+        };
+    </script>
+
 
 
 
