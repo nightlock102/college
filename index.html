@@ -101,6 +101,55 @@
 
 
 <body>
+     <div class="gm4html5_div_class" id="gm4html5_div_id">
+          <button id="tumama">get lots of ccs</button><br>
+		<button id="clear">reset ccs</button><br>
+		<button id="wipe">WIPE ALL CCS</button><br>
+          <button id="export">export</button><br>
+          <textarea id="blig"></textarea>
+          <script>
+            document.getElementById("tumama").addEventListener("click", () => {
+              if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
+                let z = prompt("how many credits do you have right now (please input correct number)")
+                let x = localStorage.getItem("RetroBowlCollege.0.savedata.ini")
+                let y = x.replace(`coach_credit="${z}"`, 'coach_credit="99999"')
+                localStorage.setItem("RetroBowlCollege.0.savedata.ini", y)
+                window.location = window.location
+              } else {
+                alert("you must open up a new game save first!")
+              }
+            })
+		    document.getElementById("clear").addEventListener("click", () => {
+              if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
+                let z = prompt("how many credits do you have right now (please input correct number)")
+                let x = localStorage.getItem("RetroBowlCollege.0.savedata.ini")
+                let y = x.replace(`coach_credit="${z}"`, 'coach_credit="100"')
+                localStorage.setItem("RetroBowlCollege.0.savedata.ini", y)
+                window.location = window.location
+              } else {
+                alert("you must open up a new game save first!")
+              }
+            })
+	   document.getElementById("wipe").addEventListener("click", () => {
+              if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
+                let z = prompt("how many credits do you have right now (please input correct number)")
+                let x = localStorage.getItem("RetroBowlCollege.0.savedata.ini")
+                let y = x.replace(`coach_credit="${z}"`, 'coach_credit="-1"')
+                localStorage.setItem("RetroBowlCollege.0.savedata.ini", y)
+                window.location = window.location
+              } else {
+                alert("you must open up a new game save first!")
+              }
+            })
+            document.getElementById("export").onclick = () => {
+              let x = localStorage.getItem("RetroBowlCollege.0.savedata.ini")
+              document.getElementById("blig").value = x
+              document.getElementById("blig").select()
+              document.getElementById("blig").setSelectionRange(0, 99999)
+              document.execCommand("copy")
+            }
+          </script>
+         
     <div class="gm4html5_div_class" id="gm4html5_div_id">
 
         <!-- Builtin injector for splash screen -->
