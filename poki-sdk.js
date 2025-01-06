@@ -107,10 +107,7 @@ PokiSDK= function() {
     consoleLog("--fx--PokiSDK--setDebugTouchOverlayController--", debug);
   }
   
-  this.isAdBlocked= function() {
-    consoleLog("--fx--PokiSDK--isAdBlocked--");    
-    return false;
-  }
+ 
 
   this.happyTime= function(scale) {
     consoleLog("--fx--PokiSDK--happyTime--", scale);    
