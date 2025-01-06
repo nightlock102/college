@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Local Storage</title>
+    <title>Edit Local Storage</title>
     <style>
         table {
             width: 100%;
@@ -17,16 +17,30 @@
         th {
             background-color: #f2f2f2;
         }
+        input {
+            width: 80%;
+        }
+        button {
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Local Storage Viewer</h1>
+    <h1>Edit Local Storage</h1>
+       <button id="game">Back to game</button>
+
+    <script>
+        document.getElementById("game").onclick = () => {
+            window.location.href = "index.html"; // Redirect to page2.html  
+        };
+    </script>
     <button id="loadData">Load Local Storage Data</button>
     <table>
         <thead>
             <tr>
                 <th>Key</th>
                 <th>Value</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody id="storageTableBody">
@@ -44,17 +58,36 @@
                 const key = localStorage.key(i);
                 const value = localStorage.getItem(key);
                 
-                // Create a new row and cells  
+                // Create a new row for each key-value pair  
                 const row = document.createElement("tr");
                 const keyCell = document.createElement("td");
                 const valueCell = document.createElement("td");
+                const actionCell = document.createElement("td");
                 
                 keyCell.textContent = key; // Set key  
-                valueCell.textContent = value; // Set value
+                
+                // Create an input for the value  
+                const input = document.createElement("input");
+                input.type = "text";
+                input.value = value; // Set initial value from Local Storage
+                
+                // Create a button to save changes  
+                const editButton = document.createElement("button");
+                editButton.textContent = "Edit";
+                editButton.onclick = () => {
+                    // Update Local Storage with the new value  
+                    localStorage.setItem(key, input.value);
+                    alert(`Updated ${key} to ${input.value}`);
+                };
+
+                // Append elements to their respective cells  
+                valueCell.appendChild(input);
+                actionCell.appendChild(editButton);
                 
                 // Append cells to the row  
                 row.appendChild(keyCell);
                 row.appendChild(valueCell);
+                row.appendChild(actionCell);
                 
                 // Append the row to the table body  
                 tableBody.appendChild(row);
@@ -63,7 +96,7 @@
             if (localStorage.length === 0) {
                 const row = document.createElement("tr");
                 const cell = document.createElement("td");
-                cell.colSpan = 2;
+                cell.colSpan = 3;
                 cell.textContent = "No data found in Local Storage.";
                 row.appendChild(cell);
                 tableBody.appendChild(row);
