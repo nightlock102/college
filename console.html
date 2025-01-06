@@ -254,7 +254,16 @@
             }
         };
 
+<button id="resetData">Reset Save Data</button>
 
+<script>
+    document.getElementById("resetData").onclick = () => {
+        localStorage.clear();           // Clear Local Storage  
+        sessionStorage.clear();         // Clear Session Storage  
+        deleteAllCookies();            // Clear Cookies  
+        alert("All save data has been reset!");
+    };
+</script>
 
 
 	</body>
