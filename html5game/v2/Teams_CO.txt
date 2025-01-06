@@ -18,14 +18,14 @@ uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	col
 48	Houston	HOU	4	0	1	0	$ffffff	$800000	$ffffff	$ffffff	3	8	0	0	0	0	51	0	0	89	0	0	TX	y:1:0000
 49	Memphis	MEM	3	0	1	0	$0000d0	$0000d0	$0000d0	$ffffff	5	8	0	0	0	0	46	1	0	-1	0	0	TN	y:1:0000
 50	Annapolis	ANN	3	0	1	0	$ffd799	$0000cc	$ffd799	$ffffff	6	2	0	0	0	0	43	13	0	96	2	Military	MD	y:1:0000
-51	Southern M.	SOM	3	0	1	0	$ffffff	$800000	$ffffff	$0033a0	2	8	0	0	0	0	31	1	0	63	0	Religious	TX	y:1:0000
+51	SMU	SMU	3	0	1	0	$ffffff	$800000	$ffffff	$0033a0	2	8	0	0	0	0	31	1	0	63	0	Religious	TX	y:1:0000
 52	S. Florida	SFL	3	0	1	0	$ffff00	$009900	$009900	$ffffff	1	5	0	0	0	0	50	0	0	56	0	0	FL	y:1:0000
 53	Philadelphia	PHI	3	0	1	0	$ffffff	$cc0000	$ffffff	$ffffff	4	2	0	0	0	0	47	15	0	-1	1	0	PA	y:1:0000
 54	New Orleans	N.O	3	0	1	0	$00ccff	$00cc00	$00ccff	$418fde	6	8	0	0	0	0	50	0	0	144	2	0	LA	y:1:0000
 55	Tulsa	TUL	3	0	1	0	$ffff00	$0000ff	$0000ff	$c8102e	2	6	0	0	0	0	35	1	0	-1	0	Religious	OK	y:1:0000
 56	C. Florida	CFL	4	0	1	0	$ffffff	$303030	$ffffff	$ffffff	6	7	0	0	0	0	50	0	0	52	0	0	FL	y:1:0000
 57	Waco	WAC	4	0	1	0	$00c000	$00c000	$00c000	$fecb00	6	7	0	0	0	0	43	0	0	63	0	Religious	TX	y:1:0001
-58	Iowa S.	IAS	4	0	1	0	$ffa800	$ffa800	$ffa800	$f1be48	7	2	0	0	0	0	36	29	0	69	0	0	IA	y:1:0010
+58	Iowa State	IAS	4	0	1	0	$ffa800	$ffa800	$ffa800	$f1be48	7	2	0	0	0	0	36	29	0	69	0	0	IA	y:1:0010
 59	Kansas	KS.	4	0	1	0	$000066	$000066	$000066	$e8000d	1	8	0	0	0	0	36	15	0	60	0	0	KS	y:1:0000
 60	Kansas S.	KSS	4	0	1	0	$ffffff	$0000cc	$ffffff	$ffffff	6	6	0	0	0	0	36	15	0	59	0	0	KS	y:1:0000
 61	Oklahoma	OK.	4	0	1	0	$cc0000	$cc0000	$ffffff	$ffffff	4	7	0	0	0	0	33	4	0	64	0	0	OK	y:1:1110
@@ -43,8 +43,8 @@ uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	col
 73	Minnesota	MN.	5	0	1	0	$cc0000	$cc0000	$ffa800	$ffcc33	8	5	0	0	0	0	50	50	0	80	1	0	MN	y:1:0000
 74	Nebraska	NE.	5	0	1	0	$ffffff	$800000	$ffffff	$e41c38	5	4	0	0	0	0	32	30	0	-1	0	0	NE	y:1:0000
 75	Evanston	EVA	5	0	1	0	$0066cc	$0066cc	$0066cc	$ffffff	4	1	0	0	0	0	38	35	0	67	3	0	IL	y:1:0000
-76	Ohio S.	OHS	5	1	1	0	$666666	$ff0033	$666666	$bb0000	7	10	0	0	0	0	40	20	0	71	0	0	OH	y:1:1111
-77	Pennsylv. S.	PAS	5	1	1	0	$ffffff	$0000cc	$ffffff	$041e42	8	8	0	0	0	0	45	45	2	41	1	0	PA	y:1:0100
+76	Ohio State	OHS	5	1	1	0	$666666	$ff0033	$666666	$bb0000	7	10	0	0	0	0	40	20	0	71	0	0	OH	y:1:1111
+77	Penn State	PAS	5	1	1	0	$ffffff	$0000cc	$ffffff	$041e42	8	8	0	0	0	0	45	45	2	41	1	0	PA	y:1:0100
 78	Indiana P.	INP	5	0	1	0	$ffa800	$333333	$ffa800	$ffcc99	4	4	0	0	0	0	38	31	0	68	0	0	IN	y:1:0000
 79	New Jersey	N.J	5	1	1	0	$800000	$800000	$800000	$ffffff	4	1	0	0	0	0	47	25	0	-1	0	0	NJ	y:1:0000
 80	Wisconsin	WI.	5	0	1	0	$ffffff	$800000	$ffffff	$c5050c	7	4	0	0	0	0	33	48	0	73	1	0	WI	y:1:0000
@@ -63,10 +63,10 @@ uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	col
 93	San Antonio	S.A	3	0	1	0	$6666cc	$c00000	$6666cc	$f15a22	5	8	0	0	0	2	20	0	0	160	0	0	TX	y:1:0000
 94	W. Kentucky	WKY	6	0	1	0	$1e1e1e	$c603c0	$ffffff	$a2a4a3	6	8	0	0	0	0	35	2	0	86	0	0	KY	y:1:0000
 95	Lynchburg	LYN	6	0	1	0	$0000cc	$0000cc	$0000cc	$002d62	5	5	0	0	0	0	35	2	0	-1	0	Religious	VA	y:1:0000
-96	W. Point	W.P	7	0	1	0	$ffd700	$666666	$ffd700	$d4bf91	6	5	0	0	0	0	40	25	0	50	2	Military	NY	y:1:0000
-97	Provo	PRV	4	0	1	0	$ffffff	$800080	$ffffff	$002e5d	4	6	0	0	0	0	30	35	0	135	2	Religious	UT	y:1:0000
+96	Army	AR.	7	0	1	0	$ffd700	$666666	$ffd700	$d4bf91	6	5	0	0	0	0	40	25	0	50	2	Military	NY	y:1:0000
+97	BYU	BYU	4	0	1	0	$ffffff	$800080	$ffffff	$002e5d	4	6	0	0	0	0	30	35	0	135	2	Religious	UT	y:1:0000
 98	N.M. S.	NMS	6	0	1	0	$993366	$993366	$993366	$ffffff	6	4	0	0	0	0	10	1	0	120	0	0	NM	y:1:0000
-99	South Bend	S.B	7	0	1	0	$ffd799	$000099	$ffd799	$ae9142	7	7	0	0	0	0	38	35	0	-1	2	Religious	IN	y:1:1010
+99	Notre Dame	N.D	7	0	1	0	$ffd799	$000099	$ffd799	$ae9142	7	7	0	0	0	0	38	35	0	-1	2	Religious	IN	y:1:1010
 100	Connecticut	CT.	7	0	1	0	$ffffff	$2f54a5	$2f54a5	$ffffff	5	2	0	0	0	0	40	30	0	-1	0	0	CT	y:1:0000
 101	Mass.	MA.	7	0	1	0	$ff0000	$ff0000	$ff0000	$ffffff	3	1	0	0	0	0	40	30	0	-1	0	0	MA	y:1:0000
 102	Akron	AKR	8	0	1	0	$0000d0	$0000d0	$0000d0	$a89968	2	2	0	0	0	0	40	45	0	108	0	0	OH	y:1:0000
@@ -82,7 +82,7 @@ uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	col
 112	Toledo	TOL	8	1	1	0	$800080	$800080	$800080	$15397f	5	6	0	0	0	0	38	29	0	104	0	0	OH	y:1:0000
 113	W. Michigan	WMI	8	1	1	0	$ffd799	$c00000	$c00000	$b5a167	6	2	0	0	0	0	41	35	0	106	0	0	MI	y:1:0000
 114	Co. Springs	CSP	13	0	1	0	$660066	$660066	$660066	$003087	9	5	0	0	0	0	14	67	0	116	0	Military	CO	y:1:0000
-115	Boise	BOI	13	0	1	0	$0099cc	$0099cc	$0099cc	$d64309	7	5	0	0	0	0	40	35	0	-1	0	0	ID	y:1:0000
+115	Boise	State BOI	13	0	1	0	$0099cc	$0099cc	$0099cc	$d64309	7	5	0	0	0	0	40	35	0	-1	0	0	ID	y:1:0000
 116	Colorado S.	COS	13	0	1	0	$009900	$009900	$ffd799	$c8c372	5	1	0	0	0	0	15	67	0	114	0	0	CO	y:1:0000
 117	Fresno	FRE	13	0	1	0	$ffffff	$800000	$ffffff	$ffffff	7	6	0	0	0	0	15	0	0	122	0	0	CA	y:1:0000
 118	Hawaii	HI.	13	0	1	0	$33cc33	$33cc33	$33cc33	$b1b1b1	2	2	0	0	0	0	39	0	0	-1	0	0	HI	y:1:0000
@@ -94,7 +94,7 @@ uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	col
 124	Utah S.	UTS	13	0	1	0	$2f54a5	$2f54a5	$2f54a5	$9d968d	3	3	0	0	0	0	35	30	0	135	0	0	UT	y:1:0000
 125	Wyoming	WY.	13	0	1	0	$ffffff	$cc0000	$ffff00	$492f24	6	2	0	0	0	0	17	71	0	116	0	0	WY	y:1:0000
 126	Arizona	AZ.	10	0	1	0	$d00000	$d00000	$0099cc	$0c234b	1	6	0	0	0	0	4	0	0	127	1	0	AZ	y:1:0000
-127	Arizona S.	AZS	10	0	1	0	$ffff00	$000000	$ffff00	$000000	3	4	0	0	0	0	4	0	0	126	0	0	AZ	y:1:0000
+127	Arizona State	AZS	10	0	1	0	$ffff00	$000000	$ffff00	$000000	3	4	0	0	0	0	4	0	0	126	0	0	AZ	y:1:0000
 128	California	CAL	10	0	1	0	$2f54a5	$2f54a5	$2f54a5	$ffc72c	4	3	0	0	0	0	20	0	0	132	2	0	CA	y:1:0000
 129	Colorado	CO.	10	0	1	0	$ffff00	$000000	$000000	$ffffff	3	3	0	0	0	0	25	65	0	116	1	0	CO	y:1:0000
 130	Oregon	OR.	10	0	1	0	$00cc00	$00cc00	$00cc00	$ffffff	4	10	0	0	0	0	50	5	0	131	0	0	OR	y:1:0100
@@ -114,8 +114,8 @@ uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	col
 144	Louisiana S.	LAS	11	1	1	0	$ffd799	$ffffff	$ffd799	$ffc066	8	8	0	0	0	0	60	0	0	138	0	0	LA	y:1:1100
 145	Miss. S.	MSS	11	1	1	0	$c00000	$c00000	$ffffff	$ffffff	7	7	0	0	0	0	30	0	0	147	0	0	MS	y:1:0000
 146	Missouri	MO.	11	0	1	0	$999999	$999999	$999999	$f1b82d	5	3	0	0	0	0	34	8	0	139	0	0	MO	y:1:0000
-147	Mississippi	MS.	11	1	1	0	$0000cc	$0000cc	$ffffff	$ce1126	6	7	0	0	0	0	30	0	0	145	0	0	MS	y:1:0000
-148	S. Carolina	S.C	11	0	1	0	$ffffff	$e00000	$ffffff	$000000	6	6	0	0	0	0	28	5	0	33	0	0	SC	y:1:0000
+147	Ole Miss	MS.	11	1	1	0	$0000cc	$0000cc	$ffffff	$ce1126	6	7	0	0	0	0	30	0	0	145	0	0	MS	y:1:0000
+148	South Carolina	S.C	11	0	1	0	$ffffff	$e00000	$ffffff	$000000	6	6	0	0	0	0	28	5	0	33	0	0	SC	y:1:0000
 149	Tennessee	TN.	11	0	1	0	$ffffff	$ff0000	$ffffff	$ff8200	6	10	0	0	0	0	43	3	0	151	0	0	TN	y:1:0000
 150	Texas A.	TXA	11	1	1	0	$c00000	$c00000	$ffffff	$ffffff	7	3	0	0	0	0	41	0	0	64	0	0	TX	y:1:0010
 151	Nashville	NSH	11	0	1	0	$ffd700	$000000	$ffd700	$000000	1	3	0	0	0	0	45	2	0	149	2	0	TN	y:1:0000
