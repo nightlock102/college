@@ -51,6 +51,8 @@
         <button id="stadium">stadium</button><br>
 	     <button id="training">training</button><br>
 	     <button id="rehab">rehab</button><br>
+		<button id="resetData">Reset Save Data</button><br>
+
           <script>
             document.getElementById("tumama").addEventListener("click", () => {
               if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
@@ -254,7 +256,6 @@
             }
         };
 
-<button id="resetData">Reset Save Data</button>
 
 <script>
     document.getElementById("resetData").onclick = () => {
