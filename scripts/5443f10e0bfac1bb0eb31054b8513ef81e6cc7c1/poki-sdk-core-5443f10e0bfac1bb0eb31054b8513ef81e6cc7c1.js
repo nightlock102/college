@@ -143,7 +143,7 @@
         const y = (function () {
           function e(t) {
             var n = this;
-            (this.gameStated = !1),
+            (this.gameStarted = !1),
               (this.duringGameplay = !1),
               (this.fpsStats = new u.V(0.01)),
               (this.lastInteractionTime = 0),
@@ -236,7 +236,7 @@
                 n.ignoreEvents()
                   ? d.Z.debug && console.error("gameplayStart ignored because of too many events")
                   : ((n.duringGameplay = !0),
-                    n. || ((n.gameStared = !0), o.Z.track(i.Z.tracking.screen.firstRound), n.monetization.startStartAdsAfterTimer()),
+                    n.gameStarted || ((n.gameStarted = !0), o.Z.track(i.Z.tracking.screen.firstRound), n.monetization.startStartAdsAfterTimer()),
                     performance.now() - n.lastInteractionTime < 5e3 && (t = n.lastInteractionEvent),
                     o.Z.track(i.Z.tracking.screen.gameplayStart, h(h({}, e), { fps: n.fpsStats.stats(), badEvents: n.badEventsCounter, interaction: t })),
                     clearTimeout(n.playerActiveTimeout),
