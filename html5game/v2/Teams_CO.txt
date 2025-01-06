@@ -6,8 +6,8 @@ uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	col
 36	Georgia T.	GAT	14	0	1	0	$ffd700	$ffd700	$ffffff	$000000	4	1	0	0	0	0	51	1	0	142	1	0	GA	y:1:0000
 37	Louisville	LOU	14	0	1	0	$ffffff	$999900	$ffffff	$ffffff	8	4	0	0	0	0	0	0	0	143	0	0	KY	y:1:0000
 38	Miami F.	MIF	14	0	1	0	$ffffff	$ffa800	$ffffff	$005030	5	3	0	0	0	0	59	0	0	35	0	0	FL	y:1:0000
-39	N.C. S.	NCS	14	0	1	0	$ffffff	$660000	$ffffff	$000000	8	3	0	0	0	0	44	2	0	40	0	0	NC	y:1:0000
-40	N. Carolina	N.C	14	0	1	0	$0099cc	$0099cc	$0099cc	$ffffff	3	7	0	0	0	0	44	2	0	34	0	0	NC	y:1:0000
+39	N.C. State	NCS	14	0	1	0	$ffffff	$660000	$ffffff	$000000	8	3	0	0	0	0	44	2	0	40	0	0	NC	y:1:0000
+40	UNC	UNC	14	0	1	0	$0099cc	$0099cc	$0099cc	$ffffff	3	7	0	0	0	0	44	2	0	34	0	0	NC	y:1:0000
 41	Pittsburgh	PIT	14	0	1	0	$ffff00	$990099	$ffff00	$003594	7	6	0	0	0	0	38	27	0	77	1	0	PA	y:1:0000
 42	Syracuse	SYR	14	0	1	0	$ff0000	$000099	$ff0000	$000000	6	5	0	0	0	2	40	65	0	-1	0	0	NY	y:1:0000
 43	Virginia	VA.	14	0	1	0	$ffffff	$000099	$ffffff	$f84c1e	6	1	0	0	0	0	43	1	0	44	1	0	VA	y:1:0000
@@ -18,13 +18,13 @@ uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	col
 48	Houston	HOU	4	0	1	0	$ffffff	$800000	$ffffff	$ffffff	3	8	0	0	0	0	51	0	0	89	0	0	TX	y:1:0000
 49	Memphis	MEM	3	0	1	0	$0000d0	$0000d0	$0000d0	$ffffff	5	8	0	0	0	0	46	1	0	-1	0	0	TN	y:1:0000
 50	Annapolis	ANN	3	0	1	0	$ffd799	$0000cc	$ffd799	$ffffff	6	2	0	0	0	0	43	13	0	96	2	Military	MD	y:1:0000
-51	SMU	SMU	3	0	1	0	$ffffff	$800000	$ffffff	$0033a0	2	8	0	0	0	0	31	1	0	63	0	Religious	TX	y:1:0000
+51	n. ca	n. carol	3	0	1	0	$ffffff	$800000	$ffffff	$0033a0	2	8	0	0	0	0	31	1	0	63	0	Religious	TX	y:1:0000
 52	S. Florida	SFL	3	0	1	0	$ffff00	$009900	$009900	$ffffff	1	5	0	0	0	0	50	0	0	56	0	0	FL	y:1:0000
 53	Philadelphia	PHI	3	0	1	0	$ffffff	$cc0000	$ffffff	$ffffff	4	2	0	0	0	0	47	15	0	-1	1	0	PA	y:1:0000
 54	New Orleans	N.O	3	0	1	0	$00ccff	$00cc00	$00ccff	$418fde	6	8	0	0	0	0	50	0	0	144	2	0	LA	y:1:0000
 55	Tulsa	TUL	3	0	1	0	$ffff00	$0000ff	$0000ff	$c8102e	2	6	0	0	0	0	35	1	0	-1	0	Religious	OK	y:1:0000
 56	C. Florida	CFL	4	0	1	0	$ffffff	$303030	$ffffff	$ffffff	6	7	0	0	0	0	50	0	0	52	0	0	FL	y:1:0000
-57	Waco	WAC	4	0	1	0	$00c000	$00c000	$00c000	$fecb00	6	7	0	0	0	0	43	0	0	63	0	Religious	TX	y:1:0001
+57	Baylor	BAY	4	0	1	0	$00c000	$00c000	$00c000	$fecb00	6	7	0	0	0	0	43	0	0	63	0	Religious	TX	y:1:0001
 58	Iowa State	IAS	4	0	1	0	$ffa800	$ffa800	$ffa800	$f1be48	7	2	0	0	0	0	36	29	0	69	0	0	IA	y:1:0010
 59	Kansas	KS.	4	0	1	0	$000066	$000066	$000066	$e8000d	1	8	0	0	0	0	36	15	0	60	0	0	KS	y:1:0000
 60	Kansas S.	KSS	4	0	1	0	$ffffff	$0000cc	$ffffff	$ffffff	6	6	0	0	0	0	36	15	0	59	0	0	KS	y:1:0000
@@ -90,7 +90,7 @@ uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	col
 120	New Mexico	N.M	13	0	1	0	$666666	$cc9900	$ffffff	$ba0c2f	5	1	0	0	0	0	13	10	0	98	0	0	NM	y:1:0000
 121	San Diego S.	SAN	13	0	1	0	$660000	$000000	$000000	$000000	7	2	0	0	0	0	16	0	0	-1	0	0	CA	y:1:0000
 122	San Jose	S.J	13	0	1	0	$99ccff	$99ccff	$99ccff	$e5a823	6	4	0	0	0	0	24	0	0	117	0	0	CA	y:1:0000
-123	Las Vegas	L.V	13	0	1	0	$660000	$660000	$ffffff	$cac8c8	4	4	0	0	0	0	5	0	0	119	0	0	NV	y:1:0000
+123	UNLV	LV.	13	0	1	0	$660000	$660000	$ffffff	$cac8c8	4	4	0	0	0	0	5	0	0	119	0	0	NV	y:1:0000
 124	Utah S.	UTS	13	0	1	0	$2f54a5	$2f54a5	$2f54a5	$9d968d	3	3	0	0	0	0	35	30	0	135	0	0	UT	y:1:0000
 125	Wyoming	WY.	13	0	1	0	$ffffff	$cc0000	$ffff00	$492f24	6	2	0	0	0	0	17	71	0	116	0	0	WY	y:1:0000
 126	Arizona	AZ.	10	0	1	0	$d00000	$d00000	$0099cc	$0c234b	1	6	0	0	0	0	4	0	0	127	1	0	AZ	y:1:0000
@@ -118,7 +118,7 @@ uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	col
 148	South Carolina	S.C	11	0	1	0	$ffffff	$e00000	$ffffff	$000000	6	6	0	0	0	0	28	5	0	33	0	0	SC	y:1:0000
 149	Tennessee	TN.	11	0	1	0	$ffffff	$ff0000	$ffffff	$ff8200	6	10	0	0	0	0	43	3	0	151	0	0	TN	y:1:0000
 150	Texas A.	TXA	11	1	1	0	$c00000	$c00000	$ffffff	$ffffff	7	3	0	0	0	0	41	0	0	64	0	0	TX	y:1:0010
-151	Nashville	NSH	11	0	1	0	$ffd700	$000000	$ffd700	$000000	1	3	0	0	0	0	45	2	0	149	2	0	TN	y:1:0000
+151	Vanderbilt	VN.	11	0	1	0	$ffd700	$000000	$ffd700	$000000	1	3	0	0	0	0	45	2	0	149	2	0	TN	y:1:0000
 152	Appalachian	APP	12	0	1	0	$000000	$000000	$000000	$ffcc00	5	7	0	0	0	0	40	25	0	155	0	0	NC	y:1:0000
 153	Arkansas S.	ARS	12	1	1	0	$600000	$600000	$600000	$cc092f	3	4	0	0	0	0	40	10	0	-1	0	0	AR	y:1:0000
 154	C. Carolina	CCO	12	0	1	0	$000000	$00cc99	$00cc99	$006f41	3	5	0	0	0	0	27	1	0	-1	0	0	SC	y:1:0000
