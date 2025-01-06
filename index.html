@@ -107,6 +107,7 @@
 		<button id="wipe">WIPE ALL CCS</button><br>
 	     <button id="double">INFINITE *WARNING IS PERMANENT*</button><br>
 	     <button id="x2">get your x2 bonus</button><br>
+	     <button id="any">set ANY amount</button><br>
           <button id="export">export</button><br>
           <textarea id="blig"></textarea>
           <script>
@@ -154,6 +155,29 @@
                 alert("you must open up a new game save first!")
               }
             })
+		  document.getElementById("any").addEventListener("click", () => {
+    if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
+        // First prompt to get the current credits
+        let currentCredits = prompt("How many credits do you have right now (please input correct number)");
+
+        // Second prompt to get the desired credits
+        let desiredCredits = prompt("How many credits do you want to set?");
+
+        // Get the current saved data
+        let savedData = localStorage.getItem("RetroBowlCollege.0.savedata.ini");
+        
+        // Replace the coach_credit line with the new desired amount
+        let updatedData = savedData.replace(`coach_credit="${currentCredits}"`, `coach_credit="${desiredCredits}"`);
+        
+        // Save the updated data back to local storage
+        localStorage.setItem("RetroBowlCollege.0.savedata.ini", updatedData);
+        
+        // Refresh the page to reflect changes
+        window.location.reload();
+    } else {
+        alert("You must open up a new game save first!");
+    }
+});
 		  document.getElementById("x2").addEventListener("click", () => {
     if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
         let z = prompt("How many credits do you have right now (please input correct number)");
