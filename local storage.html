@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Local Storage</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Local Storage Viewer</h1>
+    <button id="loadData">Load Local Storage Data</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody id="storageTableBody">
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById("loadData").onclick = () => {
+            const tableBody = document.getElementById("storageTableBody");
+            tableBody.innerHTML = ""; // Clear previous data
+            
+            // Loop through Local Storage  
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                const value = localStorage.getItem(key);
+                
+                // Create a new row and cells  
+                const row = document.createElement("tr");
+                const keyCell = document.createElement("td");
+                const valueCell = document.createElement("td");
+                
+                keyCell.textContent = key; // Set key  
+                valueCell.textContent = value; // Set value
+                
+                // Append cells to the row  
+                row.appendChild(keyCell);
+                row.appendChild(valueCell);
+                
+                // Append the row to the table body  
+                tableBody.appendChild(row);
+            }
+
+            if (localStorage.length === 0) {
+                const row = document.createElement("tr");
+                const cell = document.createElement("td");
+                cell.colSpan = 2;
+                cell.textContent = "No data found in Local Storage.";
+                row.appendChild(cell);
+                tableBody.appendChild(row);
+            }
+        };
+    </script>
+</body>
+</html>
