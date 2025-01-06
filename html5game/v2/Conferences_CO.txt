@@ -1,15 +1,15 @@
 uid	name	tla	div_0_name	div_1_name	tier	divisions	active	real_life_tier_name	real_life_name	prestige	completion
-2	Atlantic	Atl	A	C	1	2	0	FBS	Atlantic Coast	3	champ
-3	America	Ame	American	Not Used	1	1	1	FBS	American	2	champ
-4	Conf. 12	C12	C12	Not Used	1	1	1	FBS	Big 12	3	champ
-5	Large X	L.X	West	East	1	2	1	FBS	Big 10	3	champ
-6	United S.	U.S	East	West	1	1	1	FBS	Conference USA	2	champ
+2	Atlantic Coast	Atl	A	C	1	2	0	FBS	Atlantic Coast	3	champ
+3	American	Ame	American	Not Used	1	1	1	FBS	American	2	champ
+4	Big 12	C12	C12	Not Used	1	1	1	FBS	Big 12	3	champ
+5	Big 10	L.X	West	East	1	2	1	FBS	Big 10	3	champ
+6	Conf. USA	U.S	East	West	1	1	1	FBS	Conference USA	2	champ
 7	Independents	Ind	Independents	Not Used	1	1	1	FBS	Independents	0	no_completion
 8	Midwest	Mid	East	West	1	2	1	FBS	Mid-American	2	champ
-9	Mountain	Mtn	East	West	1	2	0	FBS	Mountain West (2022)	2	champ
+9	Mountain West	Mtn	East	West	1	2	0	FBS	Mountain West (2022)	2	champ
 10	Pacific	Pac	Pacific	Not Used	1	1	1	FBS	Pacific 12	3	champ
-11	East South	E.S	East	West	1	2	1	FBS	Southeastern	3	champ
-12	Sun Sash	Sun	East	West	1	2	1	FBS	Sun Belt	2	champ
+11	SEC	E.S	East	West	1	2	1	FBS	Southeastern	3	champ
+12	Sun Belt	Sun	East	West	1	2	1	FBS	Sun Belt	2	champ
 20	Sol	Sol	Sol	Not Used	2	1	0	FCS	ASUN	1	end_season
 21	Blue Sky	Sky	Sky	Not Used	2	1	1	FCS	Big Sky	1	end_season
 22	Kind of South	KoS	Southern	Not Used	2	1	0	FCS	Big South	1	end_season
