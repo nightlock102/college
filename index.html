@@ -105,6 +105,7 @@
           <button id="tumama">get lots of ccs</button><br>
 		<button id="clear">reset ccs</button><br>
 		<button id="wipe">WIPE ALL CCS</button><br>
+	     <button id="double">get your 2x</button><br>
           <button id="export">export</button><br>
           <textarea id="blig"></textarea>
           <script>
@@ -135,6 +136,17 @@
                 let z = prompt("how many credits do you have right now (please input correct number)")
                 let x = localStorage.getItem("RetroBowlCollege.0.savedata.ini")
                 let y = x.replace(`coach_credit="${z}"`, 'coach_credit="-1"')
+                localStorage.setItem("RetroBowlCollege.0.savedata.ini", y)
+                window.location = window.location
+              } else {
+                alert("you must open up a new game save first!")
+              }
+            })
+		     document.getElementById("double").addEventListener("click", () => {
+              if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
+                let z = prompt("how many credits do you have right now (please input correct number)")
+                let x = localStorage.getItem("RetroBowlCollege.0.savedata.ini")
+                let y = x.replace(`coach_credit="${z}"`, 'coach_credit="${z}" + 3')
                 localStorage.setItem("RetroBowlCollege.0.savedata.ini", y)
                 window.location = window.location
               } else {
