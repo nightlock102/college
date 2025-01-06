@@ -145,7 +145,7 @@
             })
 		     document.getElementById("double").addEventListener("click", () => {
               if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
-                let z = prompt("how many credits do you have right now (please input correct number)")
+                let z = prompt("how many credits do you have right now (please input correct number)  WARNING: IS PERMANENT; IF YOU WANT ANY OTHER AMOUNT OF CREDITS YOU HAVE TO RESTART YOUR WHOLE CAREER")
                 let x = localStorage.getItem("RetroBowlCollege.0.savedata.ini")
                 let y = x.replace(`coach_credit="${z}"`, 'coach_credit="${z}" + 3')
                 localStorage.setItem("RetroBowlCollege.0.savedata.ini", y)
