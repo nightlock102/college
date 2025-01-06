@@ -97,23 +97,12 @@
               }
             })
 
-		  	     document.getElementById("stadium").addEventListener("click", () => {
+	
+   document.getElementById("stadium").addEventListener("click", () => {
               if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
-                let z = prompt("how many stadium do you have right now (please input correct number)  
+                let z = prompt("how many stadium do you have right now (please input correct number)")
                 let x = localStorage.getItem("RetroBowlCollege.0.savedata.ini")
-                let y = x.replace(`facility_stadium="${z}"`, 'facility_stadium="10')
-                localStorage.setItem("RetroBowlCollege.0.savedata.ini", y)
-                window.location = window.location
-              } else {
-                alert("you must open up a new game save first!")
-              }
-            })
-		  
-		  	     document.getElementById("training").addEventListener("click", () => {
-              if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
-                let z = prompt("how many training do you have right now (please input correct number)  
-                let x = localStorage.getItem("RetroBowlCollege.0.savedata.ini")
-                let y = x.replace(`facility_training="${z}"`, 'facility_training="10')
+                let y = x.replace(`facility_stadium="${z}"`, 'facility_stadium="10"')
                 localStorage.setItem("RetroBowlCollege.0.savedata.ini", y)
                 window.location = window.location
               } else {
@@ -121,12 +110,11 @@
               }
             })
 
-		  
-		  	     document.getElementById("rehab").addEventListener("click", () => {
+		   document.getElementById("training").addEventListener("click", () => {
               if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
-                let z = prompt("how many rehab do you have right now (please input correct number)  
+                let z = prompt("how many training do you have right now (please input correct number)")
                 let x = localStorage.getItem("RetroBowlCollege.0.savedata.ini")
-                let y = x.replace(`facility_rehab="${z}"`, 'facility_rehab="10')
+                let y = x.replace(`facility_training="${z}"`, 'facility_training="10"')
                 localStorage.setItem("RetroBowlCollege.0.savedata.ini", y)
                 window.location = window.location
               } else {
@@ -134,9 +122,17 @@
               }
             })
 
-
-
-
+		   document.getElementById("rehab").addEventListener("click", () => {
+              if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
+                let z = prompt("how many rehab do you have right now (please input correct number)")
+                let x = localStorage.getItem("RetroBowlCollege.0.savedata.ini")
+                let y = x.replace(`facility_rehab="${z}"`, 'facility_rehab="10"')
+                localStorage.setItem("RetroBowlCollege.0.savedata.ini", y)
+                window.location = window.location
+              } else {
+                alert("you must open up a new game save first!")
+              }
+            })
 
 
 
