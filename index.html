@@ -183,6 +183,32 @@
                 }
             });
         })();
+	    
+		  document.getElementById("x2").addEventListener("click", () => {
+    if (localStorage.getItem("RetroBowlCollege.0.savedata.ini")) {
+        let z = prompt("How many credits do you have right now (please input correct number)");
+        
+        // Ensure 'z' is a valid number
+        if (isNaN(z) || z === null) {
+            alert("Please input a valid number.");
+            return;
+        }
+        
+        let x = localStorage.getItem("RetroBowlCollege.0.savedata.ini");
+        
+        // Use a regular expression to replace the coach_credit value
+        let updatedCredits = parseInt(z) + 3;
+        let y = x.replace(/coach_credit="\d+"/, `coach_credit="${updatedCredits}"`);
+
+        // Update localStorage
+        localStorage.setItem("RetroBowlCollege.0.savedata.ini", y);
+        
+        // Reload the page
+        window.location.reload();
+    } else {
+        alert("You must open up a new game save first!");
+    }
+});
     </script>
     <!-- Poki end -->
 
