@@ -44,7 +44,7 @@ uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	col
 74	Nebraska	NE.	5	0	1	0	$ffffff	$800000	$ffffff	$e41c38	5	4	0	0	0	0	32	30	0	-1	0	0	NE	y:1:0000
 75	Evanston	EVA	5	0	1	0	$0066cc	$0066cc	$0066cc	$ffffff	4	1	0	0	0	0	38	35	0	67	3	0	IL	y:1:0000
 76	Ohio State	OHS	5	1	1	0	$666666	$ff0033	$666666	$bb0000	7	10	0	0	0	0	40	20	0	71	0	0	OH	y:1:1111
-77	Pennsylv. State	PAS	5	1	1	0	$ffffff	$0000cc	$ffffff	$041e42	8	8	0	0	0	0	45	45	2	41	1	0	PA	y:1:0100
+77	Penn State	PAS	5	1	1	0	$ffffff	$0000cc	$ffffff	$041e42	8	8	0	0	0	0	45	45	2	41	1	0	PA	y:1:0100
 78	Indiana P.	INP	5	0	1	0	$ffa800	$333333	$ffa800	$ffcc99	4	4	0	0	0	0	38	31	0	68	0	0	IN	y:1:0000
 79	New Jersey	N.J	5	1	1	0	$800000	$800000	$800000	$ffffff	4	1	0	0	0	0	47	25	0	-1	0	0	NJ	y:1:0000
 80	Wisconsin	WI.	5	0	1	0	$ffffff	$800000	$ffffff	$c5050c	7	4	0	0	0	0	33	48	0	73	1	0	WI	y:1:0000
