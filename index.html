@@ -102,7 +102,31 @@
 
 <body>
     <div class="gm4html5_div_class" id="gm4html5_div_id">
+   <button id="export">export</button><br>
 
+
+
+        <script>
+            document.getElementById("export").onclick = () => {
+        const exportedData = localStorage.getItem("RetroBowlCollege.0.savedata.ini");
+
+        if (exportedData) {
+            const blob = new Blob([exportedData], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'exportedData.txt'; // Name of the exported file  
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            alert('Data exported successfully!');
+        } else {
+            alert('No data found to export.');
+        }
+    };
+        </script>
+            
         <!-- Builtin injector for splash screen -->
         <img src="html5game/splash.png" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen"
             style="display:none;" />
