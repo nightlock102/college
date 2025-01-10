@@ -46,7 +46,7 @@ uid	name	tla	conference	division	active	starting	colhelmet	colshirt	colpants	col
 76	Ohio State	OHS	5	1	1	0	$666666	$ff0033	$666666	$bb0000	7	10	0	0	0	0	40	20	0	71	0	0	OH	y:1:1111
 77	Penn State	PAS	5	1	1	0	$ffffff	$0000cc	$ffffff	$041e42	8	8	0	0	0	0	45	45	2	41	1	0	PA	y:1:0100
 78	Indiana P.	INP	5	0	1	0	$ffa800	$333333	$ffa800	$ffcc99	4	4	0	0	0	0	38	31	0	68	0	0	IN	y:1:0000
-79	New Jersey	N.J	5	1	1	0	$800000	$800000	$800000	$ffffff	4	1	0	0	0	0	47	25	0	-1	0	0	NJ	y:1:0000
+79	Rutgers	R.G	5	1	1	0	$800000	$800000	$800000	$ffffff	4	1	0	0	0	0	47	25	0	-1	0	0	NJ	y:1:0000
 80	Wisconsin	WI.	5	0	1	0	$ffffff	$800000	$ffffff	$c5050c	7	4	0	0	0	0	33	48	0	73	1	0	WI	y:1:0000
 81	Charlotte	CHA	3	0	1	0	$ffffff	$00c000	$00c000	$000000	1	3	0	0	0	0	44	2	0	-1	0	0	NC	y:1:0000
 82	Florida I.	FLI	6	0	1	0	$0099cc	$0099cc	$0099cc	$b6862c	1	2	0	0	0	0	50	0	0	83	0	0	FL	y:1:0000
