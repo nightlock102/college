@@ -31,18 +31,18 @@
             border: 0px;
         }
 
-	 button {
-		 background-color:#ffffff;}
-	  button:hover{
-		  background-color:red;
-		  width:120%;
-		  hieght:auto;
-	  }  
-	button:active{
-		background-color:yellow;
-		width:140%;
-		height:auto;
-	}    
+	.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
         canvas {
             image-rendering: pixelated;
@@ -116,9 +116,9 @@
 <body>
      <div class="gm4html5_div_class" id="gm4html5_div_id">
 
-     <button id="x2">get your x2 bonus</button><br>
+     <button id="x2" class="button">get your x2 bonus</button><br>
 
-   <button id="goToPage1">local storage</button>
+   <button id="goToPage1" class="button">local storage</button>
 
     <script>
         document.getElementById("goToPage1").onclick = () => {
@@ -128,7 +128,7 @@
 
 <br>
 
-	      <button id="goToPage2">console</button>
+	      <button id="goToPage2" class="button">console</button>
 
     <script>
         document.getElementById("goToPage2").onclick = () => {
