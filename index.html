@@ -103,6 +103,29 @@
 <body>
     <div class="gm4html5_div_class" id="gm4html5_div_id">
    <button id="export">export</button><br>
+             <input type="file" id="importFile" accept=".txt" />
+<button id="import">Import Data</button>
+
+<script>
+    // Import functionality  
+    document.getElementById("import").onclick = () => {
+        const fileInput = document.getElementById("importFile");
+        const file = fileInput.files[0];
+
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                const importedData = event.target.result;
+                localStorage.setItem("RetroBowlCollege.0.savedata.ini", importedData);
+                alert('Data imported successfully!');
+            };
+            reader.readAsText(file);
+        } else {
+            alert('Please select a file to import.');
+        }
+    };
+</script>
+
 
 
 
